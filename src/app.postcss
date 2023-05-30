@@ -1,0 +1,31 @@
+/* Write your global styles here, in PostCSS syntax */
+
+@tailwind base;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+@tailwind components;
+
+@tailwind utilities;
+
+.app-input-container {
+  @apply w-full mt-1 text-lg py-1 border-2 rounded-lg px-3 bg-indigo-100 lg:bg-white border-gray-400 focus:outline-none focus-within:border-gray-700;
+}
+
+.app-input {
+  @apply flex bg-transparent w-full outline-none px-1 placeholder:text-gray-300 placeholder:font-mono placeholder:text-base;
+}
+
+.app-input-error {
+  @apply border-orange-600;
+}
+
+.app-input-label {
+  @apply text-sm font-bold text-gray-700 tracking-wide ml-1;
+}
